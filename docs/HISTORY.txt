@@ -1,7 +1,10 @@
 Changelog
 =========
 
-0.5 - Unreleased
+0.5 (2011-02-21)
 ----------------
 
-* Initial release
+* Implementation of multiple hostnames provider [erico_andrei]
+
+* Initial release [erico_andrei]
+
