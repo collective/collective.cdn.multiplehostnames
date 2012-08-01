@@ -37,4 +37,3 @@ setup(name='collective.cdn.multiplehostnames',
       target = plone
       """,
       )
-
