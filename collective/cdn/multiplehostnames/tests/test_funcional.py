@@ -17,5 +17,8 @@ def test_suite():
                           package='collective.cdn.multiplehostnames.docs',
                           optionflags=optionflags),
                 layer=FUNCTIONAL_TESTING),
+        doctest.DocTestSuite(
+            module='collective.cdn.multiplehostnames.provider'
+                            ),
     ])
     return suite
