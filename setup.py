@@ -36,6 +36,9 @@ setup(name='collective.cdn.multiplehostnames',
           # -*- Extra requirements: -*-
           'collective.cdn.core',
       ],
+      extras_require={
+        'test': ['plone.app.testing'],
+      },
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
