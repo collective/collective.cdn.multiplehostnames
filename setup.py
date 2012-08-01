@@ -2,14 +2,14 @@
 from setuptools import setup, find_packages
 import os
 
-version = open(os.path.join("collective", "cdn", "multiplehostnames", "version.txt")).read().strip()
+version = open(os.path.join("collective", "cdn", "multiplehostnames",
+                            "version.txt")).read().strip()
 
 setup(name='collective.cdn.multiplehostnames',
       version=version,
       description="Multiple Hostnames CDN support for Plone",
-      long_description=open(os.path.join("collective", "cdn", "multiplehostnames", "README.txt")).read() + "\n" +
+      long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
         "Framework :: Zope2",
