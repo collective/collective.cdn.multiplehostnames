@@ -23,6 +23,8 @@ Requirements
 
    * Plone 3.3.x (http://plone.org/products/plone)
    * Plone 4.0.x (http://plone.org/products/plone)
+   * Plone 4.1.x (http://plone.org/products/plone)
+   * Plone 4.2.x (http://plone.org/products/plone)
    * collective.cdn.core (http://pypi.python.org/pypi/collective.cdn.core)
        
 Installation
@@ -88,7 +90,7 @@ file would change from::
    http://www.simplesconsultoria.com.br/portal_css/beyondskins_simples/simplesconsultoria_site-cachekey0549.css
 
 to::
-	
+  
    http://cache01.simplesconsultoria.com.br/portal_css/beyondskins_simples/simplesconsultoria_site-cachekey0549.css
 
 This is due to the algorithm used to choose between the available hostnames. If 
@@ -138,11 +140,11 @@ So each site will have the following settings:
 And a link to a file portal_css/beyondskins_simples/base-cachekey3443.css,
 would return for www.simplesconsultoria.com.br::
 
-	http://cache02.simples.srv.br/simples/portal_css/beyondskins_simples/base-cachekey3443.css
-	
+  http://cache02.simples.srv.br/simples/portal_css/beyondskins_simples/base-cachekey3443.css
+  
 And for www.simplesnet.com.br::
 
-	http://cache02.simples.srv.br/simplesnet/portal_css/beyondskins_simples/base-cachekey3443.css
+  http://cache02.simples.srv.br/simplesnet/portal_css/beyondskins_simples/base-cachekey3443.css
 
 So, our frontend server must rewrite calls to **simples/** to 
 www.simplesconsultoria.com.br server and calls to **simplesnet/** to the 
